@@ -1,0 +1,15 @@
+using System;
+namespace С18
+{
+    
+    class Program 
+    {
+        static void Main (string[] args)
+        {
+            float length, width;
+            length = 4.5f;
+            for (width = 3f; width <= length; width += 0.2f)
+                Console.WriteLine("{0:f4}", Math.Acos(width / length) * 180 / Math.PI); //"{0:f4}" регулирует количество символов после запятой
+        }
+    }
+}
